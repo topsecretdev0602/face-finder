@@ -103,7 +103,7 @@ class FaceDetector extends Component {
               Faces detected: {regions.length}
             </h6>
           )}
-          <div>
+          <div className="text-center">
             <canvas ref={this.canvasRef} width="800" height="800" />
           </div>
         </Fragment>

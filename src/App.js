@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import ImageInput from "./components/ImageInput";
 import FaceDetector from "./components/FaceDetector";
 import Clarifai from "clarifai";
-//import isEmpty from "lodash/isEmpty";
 
 const app = new Clarifai.App({
   apiKey: "YOUR_API_KEY"
@@ -19,7 +18,7 @@ class App extends Component {
   }
 
   /*
-   * Update state when Clarafai AIP returns bounding box data
+   * Update state when Clarafai API returns bounding box data
    */
   displayFaceBoxes = boxes => {
     this.setState({ boxes: boxes });
